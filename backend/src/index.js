@@ -31,12 +31,19 @@ const routes = require('./routes'); // Caminho relativo
 
 const app = express();
 
+/** Conexão com o MongoDB Atlas - Não funciona pelo proxy do Sicoob*/
 // mongoose.connect('mongodb+srv://omnistackleo:cCaAKwdxK4FIgDoa@cluster0-k6hnf.mongodb.net/week10?retryWrites=true&w=majority', {
 //       useNewUrlParser: true ,
 //       useUnifiedTopology: true
 // });
 
-mongoose.connect('mongodb://omnistackleo:cCaAKwdxK4FIgDoa@cluster0-shard-00-00-k6hnf.mongodb.net:27017,cluster0-shard-00-01-k6hnf.mongodb.net:27017,cluster0-shard-00-02-k6hnf.mongodb.net:27017/week10?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority', {
+// mongoose.connect('mongodb://omnistackleo:cCaAKwdxK4FIgDoa@cluster0-shard-00-00-k6hnf.mongodb.net:27017,cluster0-shard-00-01-k6hnf.mongodb.net:27017,cluster0-shard-00-02-k6hnf.mongodb.net:27017/week10?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority', {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// });
+
+/** Conexão com o MongoDB Local */
+mongoose.connect('mongodb://127.0.0.1:27017/week10?readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=false', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

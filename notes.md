@@ -89,5 +89,39 @@ Criei dois arquivos de configuração tanto pro git como pro npm por causa do pr
 Usando o MongoDB Atlas, depois tentar com uma instalação local
 Senha: cCaAKwdxK4FIgDoa
 
+passar o nome do banco pela url de conexão -> depois da porta e da "/" e antes da "?", vem o nome do banco
+
+Queries pelo MongoDB - operadorés lógicos do Mongo: Procurar por "mongo operators"
+
 ### Consumindo APIs
 Instalar a biblioteca "axios". Ela serve para fazer chamadas para outras APIs
+
+> No Sicoob: tive que instalar "axios axios-https-proxy-fix" para usar a bibliteca "https-proxy-agent". Tive que criar uma constante tem essa biblioteca:
+`const HttpsProxyAgent = require('https-proxy-agent');`
+
+> Tive que criar o seguinte objeto para configuração:
+`const axiosDefaultConfig = {
+    baseURL: 'https://jsonplaceholder.typicode.com/posts',
+    proxy: false,
+    httpsAgent: new HttpsProxyAgent('http://leonardo.cunha:Hebreus12@192.168.50.178:80')
+};`
+> Por fim, modificar a criação do axios para:
+`const axios = require('axios').create(axiosDefaultConfig);`
+
+Começar montando a requisição pra depois desenvolver a API
+
+###Dúvidas:
+- modules.exports : o que são os "modules"?
+
+### Controler
+Costuma ter cinco funções: index (mostra uma lista das entidades), show (mostra uma entidade), store, update, destroy
+
+Geralmente trabalhar com **um** index por controller
+
+Existe um limite de métodos por controller
+
+### Exercício
+Criar os outros métodos:
+update Dev
+	nome, bio, avatar, localização, techs
+destroy Dev
