@@ -79,3 +79,8 @@ Criar atalhos (script) de execução para o Yarn dentro do package.json:
 `"scripts": { "dev" : "nodemon index.js"}`
 
 Testar API usando o insomnia.rest ou o postman
+
+### Configuração
+Existe um ".yarnrc" no mesmo molde do ".npmrc". Mas, as configurações gerais, como o proxy que precisei usar, são puxadas do .npmrc mesmo com o yarn
+
+Criei dois arquivos de configuração tanto pro git como pro npm por causa do proxy aqui do sicoob
