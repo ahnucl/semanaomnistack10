@@ -84,3 +84,10 @@ Testar API usando o insomnia.rest ou o postman
 Existe um ".yarnrc" no mesmo molde do ".npmrc". Mas, as configurações gerais, como o proxy que precisei usar, são puxadas do .npmrc mesmo com o yarn
 
 Criei dois arquivos de configuração tanto pro git como pro npm por causa do proxy aqui do sicoob
+
+### MongoDB
+Usando o MongoDB Atlas, depois tentar com uma instalação local
+Senha: cCaAKwdxK4FIgDoa
+
+### Consumindo APIs
+Instalar a biblioteca "axios". Ela serve para fazer chamadas para outras APIs
