@@ -193,8 +193,37 @@ React: sintaxe de impotação diferente do Node.js versão abaixo da 13 (a lts e
 Mais anotações no index.js
 
 ### Conceitos principais do React:
-- Componente
+- Componente - função que retorna html ou css, etc; primeira letra sempre maiúscula; cada componente também vira uma tag
+	uma regra do React: cada arquivo deve ter apenas um componente
+    Um bloco isolado de html, css e JS o qual não interfere no restante da aplicação
 - Estado
 - Propriedade
 
-Continuar 27:20
+Um componente não pode retornar várias tags "soltas", é necessário um container (div, por exemplo) para que seja apenas um elemento retornado, imagino...
+
+O react não fica monitorando alterações dentro de variáveis para fazer a visualização do componente -> necessário usar o conceito de ESTADO
+
+O react usa um conceito de imutabilidade -> um dado nunca será alterado; deve-se criar um novo dado a partir do valor anterior
+
+DESESTRUTURAÇÃO -> recurso do JS
+
+Extensão do chrome: React Dev Tools
+
+### Marcas de Tempo
+> Até **42:00** é uma introdução de como criar o projeto e dos conceitos do React. A partir dessa marca começa a criação do app em si.
+
+### Construção de apps
+Começar da parte visual para depois acrescentar a parte funcional
+
+### Tags
+<aside>: fazer sidebar
+
+### Fonte:
+Roboto da Google
+
+###Atributos
+####Os nomes precisam mudar por causa das palavras reservadas do JS
+class passa a ser className
+for passa a ser htmlFor
+
+Continuar de 50:27

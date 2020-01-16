@@ -1,10 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-// Trabalhando com HTML dentro do Javascript: JSX
+import './global.css'; // importação do css para dentro do css
+import './App.css'; // importação do css para dentro do css
+
+
 function App() {
-  return ( 
-    <h1>Hello, frenz</h1>
-  );
+
+
+
+    return (
+        <div id="app">
+            <aside>
+                <strong>Cadastrar</strong>
+                <form>
+                    <label htmlFor="github_username">Usuário do Github</label>
+                    <input name="github_username" id="github_username" required />
+                </form>
+            </aside>
+            <main>
+                <h2>mundo</h2>
+            </main>
+        </div>
+    );
 }
 
 export default App;
