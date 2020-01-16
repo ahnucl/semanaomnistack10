@@ -125,3 +125,76 @@ Criar os outros métodos:
 update Dev
 	nome, bio, avatar, localização, techs
 destroy Dev
+
+## 15/01
+
+Abordagem tradicional vs Abordagem SPA
+
+React cria os htmls no lado do cliente.
+
+Na abordagem de SPA, apenas dados são retornados pelo servidor; as requisições trazem apenas dados. O Backend não tem responsabilidade pela apresentação dos dados.
+
+### Criando o projeto React
+
+Usando o YARN:
+`yarn cerate react-app <nome do projeto>`
+
+Usando NPM:
+`npx create-react-app <nome do projeto>`
+	Obs: npm: gerencia pacotes mas não executa nenhum
+		 npx: ferramenta para executar pacotes
+
+Instalou:
+	react, react-dom, react-scripts with cra-template (São dependências do React);
+
+Mensagem final:
+
+	Inside that directory, you can run several commands:
+
+	  yarn start
+	    Starts the development server.
+
+	  yarn build
+	    Bundles the app into static files for production.
+
+	  yarn test
+	    Starts the test runner.
+
+	  yarn eject
+	    Removes this tool and copies build dependencies, configuration files
+	    and scripts into the app directory. If you do this, you can’t go back!
+
+Estrutura bem parecida... pasta "node_modules", etc.
+
+NUNCA mexer no "yarn.lock"
+
+Html e css ficarão no lado do React
+
+pasta public: arquivos que precisam ficar de forma pública na aplicação
+	index.html -> primeiro arquivo que será aberto pela aplicação, tudo parte dele
+	conceito PWA : progressive web apps (tem post no blog da rocketseat)
+	robot.txt: dizer para o Google quais páginas da aplicação são rastreáveis, ou seja, indexáveis
+
+React, Angular, Vue: Nãos e escreve HTML, tudo é gerado pelo JavaScript
+
+Pelo que entendi, o **index.js não deve ser mudado** também
+
+Para aprender do zero: deletados vários arquivos da pasta src, deixando apenas o Aoo.js e o index.js
+Estado básico do index.js:
+`
+import React from 'react'; // Sempre existe
+import ReactDOM from 'react-dom'; // Varia de acordo com o ambiente
+import App from './App'; // Arquivo criado no próprio projeto
+ReactDOM.render(<App />, document.getElementById('root'));
+`
+
+React: sintaxe de impotação diferente do Node.js versão abaixo da 13 (a lts está na 11)
+
+Mais anotações no index.js
+
+### Conceitos principais do React:
+- Componente
+- Estado
+- Propriedade
+
+Continuar 27:20
