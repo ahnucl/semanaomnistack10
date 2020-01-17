@@ -246,3 +246,22 @@ Contextos dentro do React: transição de propriedades entre componentes pai e f
 
 ### Exercício:
 Adicionar possibilidade de alterar e deletar usuário
+
+## 16/01
+
+Expo -> https://blog.rocketseat.com.br/expo-react-native/
+
+yarn global add expo-cli
+
+"yarn global path"
+
+Referência: https://blog.rocketseat.com.br/3-passos-para-aprender-react-native/
+
+### Proxy
+Tiver que criar as variáveis de ambiente HTTP_PROXY e HTTPS_PROXY e adicionar os proxies no yarn config
+`yarn config set https-proxy=...`
+`yarn config set proxy=...`
+
+baixar app expo no celular
+
+Problemas comuns com o Expo: https://github.com/Rocketseat/expo-common-issues
