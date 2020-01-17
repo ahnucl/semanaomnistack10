@@ -6,8 +6,8 @@ const parseStringAsArray = require('../utils/parseStringAsArray');
  * Verificação do proxy do Sicoob
  * v1 - Hardcode só pra continuar o estudo
  */
-//const estouNoSicoob = 1;
-const estouNoSicoob = 0;
+const estouNoSicoob = 1;
+//const estouNoSicoob = 0;
 
 if(estouNoSicoob){
     console.log("> Usando configuração para o proxy do Sicoob.");
@@ -22,7 +22,7 @@ if(estouNoSicoob){
     console.log("> Sem configurações adicionais.");
     var tempFun  = require('axios');
 }
-const axios = tempFun; // O erra era porque eram duas definições pra uma mesma const?
+const axios = tempFun; // O erro era porque eram duas definições pra uma mesma const?
 
 module.exports = {
     async index(request, response){
