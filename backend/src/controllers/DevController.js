@@ -6,8 +6,8 @@ const parseStringAsArray = require('../utils/parseStringAsArray');
  * Verificação do proxy do Sicoob
  * v1 - Hardcode só pra continuar o estudo
  */
-const estouNoSicoob = 1;
-// const estouNoSicoob = 0;
+//const estouNoSicoob = 1;
+const estouNoSicoob = 0;
 
 if(estouNoSicoob){
     console.log("> Usando configuração para o proxy do Sicoob.");

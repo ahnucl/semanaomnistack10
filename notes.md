@@ -226,4 +226,23 @@ Roboto da Google
 class passa a ser className
 for passa a ser htmlFor
 
-Continuar de 50:27
+### Bonus: responsividade
+a partir de 1:06:00 : abrir o inspecionar elemento e ir diminuindo a tela. Observar a largura em pixels no topo da tela e fazer as alterações
+
+usando "media query" ( @media(condição) )
+
+
+Função de localização: disponível em todo browser
+precisa ser executada uma única vez por exibição em tela
+todo código do componente precisa estar dentro do componente para que, caso o mesmo deixe de existir e depois volte a existir, todo o código esteja presente; se um corpo de código for colocado fora do componente, esse corpo de código só será executado uma única vez durante todo o **ciclo de vida** da aplicação.
+
+### comunicando com o Backend
+Necessário fazer um ajuste pois o node, por padrão, bloqueia acessos externos à API. Como a API tá no localhost:3333, e a aplicação web no localhost:3000, o node bloqueia isso.. É necessário instalar a extensão **cors** (cross origin resourse sharing)
+
+cada elemento gerado na iteração deve ter um atributo "key" que seja único
+
+### Conceitos para a separação dos arquivos:
+Contextos dentro do React: transição de propriedades entre componentes pai e filho sem precisar ficar usando propriedades
+
+### Exercício:
+Adicionar possibilidade de alterar e deletar usuário
