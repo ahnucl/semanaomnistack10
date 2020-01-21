@@ -249,11 +249,20 @@ Adicionar possibilidade de alterar e deletar usuário
 
 ## 16/01
 
+O React Native implementa dentro da aplicação (iOs ou Android) o **JavascriptCore** > Framework que dá o entendimento da linguagem JavaScript pro sistema operacional mobile. O iOs e o Android passam a conseguir interpretar código JS para a *construção e manipulação da interface*.
+
+iOS -> formato .ipa (Android Studio)
+Android -> formato .apk (Xcode)
+
+O Expo é um framework para o React native - conjunto de bibliotecas prontas pra usar a grande maioria das funcionalidades do celular - evita instalar o Android SDK e o iOS SDK.
+
+http://docs.rocketseat.dev -> guia para ambiente do React Native sem o Expo
+
 Expo -> https://blog.rocketseat.com.br/expo-react-native/
 
 yarn global add expo-cli
 
-"yarn global path"
+"yarn global path" -> configuração que talvez precise ser feita em SO não Windows (para instalação de pacotes globais)
 
 Referência: https://blog.rocketseat.com.br/3-passos-para-aprender-react-native/
 
@@ -265,3 +274,46 @@ Tiver que criar as variáveis de ambiente HTTP_PROXY e HTTPS_PROXY e adicionar o
 baixar app expo no celular
 
 Problemas comuns com o Expo: https://github.com/Rocketseat/expo-common-issues
+
+### Iniciar projeto com expo:
+`expo init <nome>`
+
+Tutorial para usar um emulador com o Expo: Youtube da RocketSeat - um pouco mais pesado para a máquina
+
+Poucas diferenças entre o React e o React Native
+
+O React Native **não** tem **TAGS SEMÂNTICAS** e as TAGS não têm estilização própria
+
+Não tem Class e id nas tags, deve-se usar um atributo "style" que recebe uma variável (json) contendo a estilização daquele elemento específico (todos os elementos Native aceitam esse atributo). Usa a variável Stylesheet do ReactNative
+
+"<View>" equivale a uma "<div>"
+
+As propriedades de estilo (css) são representadas por um objeto JavaScript, logo não pode haver palavras separadas por "-"
+
+Não há herança de estilização no React Native. Cada elemento deve possuir sua própria estilização
+
+### estutura de pacotes:
+
+package.json, com dependências, dependências de desenvolvimento e scripts
+
+É possível construir aplicações WEB com a sintaxe do React Native (WPA)
+
+pasta assets> tem ícones e splash screen (tela antes de iniciar)
+
+### Babel
+Converte o JS das versões mais recentes para as versões que serão entendidas pelos dispositivos oui browsers, pois eles não entendem completamente as versões mais modernas da linguagem
+
+### Desenvolvimento da aplicação em si
+#### a partir de 31:00
+
+Vai ser necessário instalar uma ferramenta de **navegação**... Entrar em docs.expo.io (33:27) (Procurando por "Routing and navigation")
+
+A ferramenta é o React Navigation (https://reactnavigation.org/docs/en/getting-started.html) 
+
+Instalada via `yarn add react-navigation` e também é necessário instalar outras dependências. Ver site acima.
+
+Explicação das bibliotecas: `expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context`
+> react-native-gesture-handler: usar gestos
+> react-native-reanimated: animações
+> react-native-screens e react-native-safe-area-context: telas, áreas permitidas para interação... (explicação um pouco antes de 36:00)
+Continuar de 36:00 - "Hello react navigation"
