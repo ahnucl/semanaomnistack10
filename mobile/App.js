@@ -4,7 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.hello}>Finalmenteeee!!!</Text>
+      <Text style={styles.hello}>Teste</Text>
+      <Text >Outro teste</Text>
     </View>
   );
 }
@@ -12,12 +13,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#7159c1', // roxo da Rocketseat
+    backgroundColor: '#333333', // roxo da Rocketseat
     alignItems: 'center',
     justifyContent: 'center',
   },
   hello: {
-    color: '#AA1F00',
+    color: '#79FAAA',
     fontSize: 32,
     fontWeight: "bold",
   }
