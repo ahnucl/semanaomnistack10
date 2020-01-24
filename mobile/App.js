@@ -1,25 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'react-native'; // Componente
+
+import Routes from './src/routes';
+
+/**
+ * O ajuste de estilo da status bar foi feito aqui para estar presente em todas as rotas.
+ * Caso se deseja-se ter um estilo apenas em uma rota, o ajuste deveria ser adiciona apenas nela
+ */
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.hello}>Teste</Text>
-      <Text >Outro teste</Text>
-    </View>
+    <>
+      <StatusBar barStyle="light-content" backgroundColor="#7d40e7"/>
+      <Routes />
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#333333', // roxo da Rocketseat
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  hello: {
-    color: '#79FAAA',
-    fontSize: 32,
-    fontWeight: "bold",
-  }
-});

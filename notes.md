@@ -306,9 +306,11 @@ Converte o JS das versões mais recentes para as versões que serão entendidas 
 ### Desenvolvimento da aplicação em si
 #### a partir de 31:00
 
+no App.js, não dá pra ter componentes um debaixo do outro sem um container: usar **"fragments" (<> </>)**
+
 Vai ser necessário instalar uma ferramenta de **navegação**... Entrar em docs.expo.io (33:27) (Procurando por "Routing and navigation")
 
-As ROTAS no React Native (React Navigation) são diferentes da do Node (express)
+As **ROTAS** no React Native (React Navigation) são diferentes da do Node (express)
 
 Site do Expo > Managed Workflow > Routing and Navigation
 
@@ -319,6 +321,42 @@ Instalada via `yarn add react-navigation` e também é necessário instalar outr
 Explicação das bibliotecas: `expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context`
 > react-native-gesture-handler: usar gestos
 > react-native-reanimated: animações
-> react-native-screens e react-native-safe-area-context: telas, áreas permitidas para interação... (explicação um pouco antes de 36:00)
-Continuar de 36:00 - "Hello react navigation"
+> react-native-screens: gerenciar telas/rotas
+> react-native-safe-area-context: onde preencher a tela
 
+"Hello react navigation" -> o restante do tutorial (https://reactnavigation.org/docs/en/getting-started.html) não precisa ser seguido porque estamos usando o EXPO
+
+Vários tipos de navegação > vamos usar a navegação por pilhas (react-navigation-stack)
+
+Navegação por pilha > normalmente por botões, ação do usuário
+
+Navegação por abas
+
+Navegação via drawer > puxar menus da esquerda pra direita - "menu de hamburguer"
+
+### Reload MANUAL
+Opções de menu do EXPO: 
+- Ctrl+M no Android
+- cmd+D no Mac 
+- Balançar no celular
+
+Reload Rápido no emulador:
+- Mac: cmd+r
+- Android: r+r
+
+**React Native não tem HERANÇA de ESTILOS**
+
+Se usa { } no import quando queremos algum componente específico. Caso queiramos a "exportação padrão" (export default), não é necessário usar chaves.
+
+**JSX**: Javascript dentro do HTML, usar {} no html dentro do React
+
+Lembrando: no React Native as estilizações são feitas por Objetos!
+
+Carregar a localização... aprox 48:00
+
+Do React: Para executar algo uma única vez, usar "useEffect"
+
+### Adicionando marcadores
+Importar Marker da 'react-native-maps'
+
+A partir de 56:00
