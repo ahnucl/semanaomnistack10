@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   hello: {
-    color: '#AA1F00',
+    color: '#FFF',
     fontSize: 32,
     fontWeight: "bold",
   }
