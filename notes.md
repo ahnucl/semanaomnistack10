@@ -267,7 +267,7 @@ yarn global add expo-cli
 Referência: https://blog.rocketseat.com.br/3-passos-para-aprender-react-native/
 
 ### Proxy
-Tiver que criar as variáveis de ambiente HTTP_PROXY e HTTPS_PROXY e adicionar os proxies no yarn config
+Tive que criar as variáveis de ambiente HTTP_PROXY e HTTPS_PROXY e adicionar os proxies no yarn config
 `yarn config set https-proxy=...`
 `yarn config set proxy=...`
 
@@ -298,15 +298,19 @@ package.json, com dependências, dependências de desenvolvimento e scripts
 
 É possível construir aplicações WEB com a sintaxe do React Native (WPA)
 
-pasta assets> tem ícones e splash screen (tela antes de iniciar)
+pasta assets> tem ícones e splash screen (tela antes de iniciar) (verificar tamanho da imagem nocanto inferior direito da tela caso queira substituir)
 
 ### Babel
-Converte o JS das versões mais recentes para as versões que serão entendidas pelos dispositivos oui browsers, pois eles não entendem completamente as versões mais modernas da linguagem
+Converte o JS das versões mais recentes para as versões que serão entendidas pelos dispositivos ou browsers, pois eles não entendem completamente as versões mais modernas da linguagem
 
 ### Desenvolvimento da aplicação em si
 #### a partir de 31:00
 
 Vai ser necessário instalar uma ferramenta de **navegação**... Entrar em docs.expo.io (33:27) (Procurando por "Routing and navigation")
+
+As ROTAS no React Native (React Navigation) são diferentes da do Node (express)
+
+Site do Expo > Managed Workflow > Routing and Navigation
 
 A ferramenta é o React Navigation (https://reactnavigation.org/docs/en/getting-started.html) 
 
@@ -317,3 +321,4 @@ Explicação das bibliotecas: `expo install react-native-gesture-handler react-n
 > react-native-reanimated: animações
 > react-native-screens e react-native-safe-area-context: telas, áreas permitidas para interação... (explicação um pouco antes de 36:00)
 Continuar de 36:00 - "Hello react navigation"
+
